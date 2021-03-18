@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 /**
- * Write a description of class Course here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * The course class creates course objects that are added to the university.
+ * and can be enrolled in by students.
+ * @author (Luke Penney)
+ * @version (22/03/2021)
  */
 public class Course
 {
     // instance variables - replace the example below with your own
-    private int courseNumber;
+    private String courseNumber;
     private String courseTitle;
     private ArrayList<Student> students;
     private String instructor;
@@ -18,7 +18,7 @@ public class Course
     /**
      * Constructor for objects of class Course
      */
-    public Course()
+    public Course(String courseNumber, String courseTitle, String instructor)
     {
         // initialise instance variables
         this.courseNumber = courseNumber;
@@ -38,5 +38,20 @@ public class Course
     {
         // put your code here
         grades.put(student,grade);
+    }
+    
+    public String getCourseNum()
+    {
+        return courseNumber;
+    }
+    
+    public String getCourseTitle()
+    {
+        return courseTitle;
+    }
+    
+    public String getInstructor()
+    {
+        return instructor;
     }
 }
