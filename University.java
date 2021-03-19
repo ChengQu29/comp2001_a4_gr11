@@ -1,13 +1,14 @@
 import java.util.ArrayList;
 /**
- * Write a description of class University here.
+ * This method contains all the registered students and courses offered.
  *
  * @author (Luke Penney)
  * @version (22/03/2021)
  */
 public class University
 {
-    // instance variables - replace the example below with your own
+    // ArrayLists containing all the offered courses 
+    // and registered students
     private ArrayList<Student> studentsInUniversity;
     private ArrayList<Course> coursesOffered;
     /**
@@ -15,29 +16,41 @@ public class University
      */
     public University()
     {
-        // initialise instance variables
+        // initialize ArrayLists for students and courses
         studentsInUniversity = new ArrayList<>();
         coursesOffered = new ArrayList<>();
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * addCourse adds new courses to the university 
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param  newCourse is the new course object to be added to the coursesOffered ArrayList
      */
     public void addCourse(Course newCourse)
     {
-        // put your code here
         coursesOffered.add(newCourse);
     }
+    /**
+     * addStudent adds new students to the university
+     * 
+     * @param newStudent is a student object that is added to the studenstInUniversity ArrayList
+     */
     public void addStudent(Student newStudent)
     {
         studentsInUniversity.add(newStudent);
     }
+    /**
+     * printCourseInfo prints all the info about all the offered courses
+     * 
+     */
     public void printCourseInfo()
     {
        coursesOffered.stream()
                      .forEach(s -> System.out.println(s.getCourseNum() + "-" + s.getCourseTitle() + "-" + s.getInstructor()));
+    }
+    
+    public void printStudentInfo()
+    {
+        
     }
 }

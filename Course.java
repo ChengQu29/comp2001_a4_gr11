@@ -8,7 +8,6 @@ import java.util.HashMap;
  */
 public class Course
 {
-    // instance variables - replace the example below with your own
     private String courseNumber;
     private String courseTitle;
     private ArrayList<Student> students;
@@ -17,10 +16,14 @@ public class Course
 
     /**
      * Constructor for objects of class Course
+     * 
+     * @param courseNumber is a string ex: "comp2001"
+     * @param courseTitle is the string title of the course ex: "into to oop"
+     * @param is the name of the instructor as a string ex: "Adrian Fiech"
      */
     public Course(String courseNumber, String courseTitle, String instructor)
     {
-        // initialise instance variables
+        // initialization of instance variables
         this.courseNumber = courseNumber;
         this.courseTitle = courseTitle;
         this.instructor = instructor;
@@ -39,17 +42,23 @@ public class Course
         // put your code here
         grades.put(student,grade);
     }
-    
+    /**
+     * accessor method to return the course number
+     */
     public String getCourseNum()
     {
         return courseNumber;
     }
-    
+    /**
+     * accesor method to return the course title
+     */ 
     public String getCourseTitle()
     {
         return courseTitle;
     }
-    
+    /**
+     * accessor method to return the instructors name
+     */
     public String getInstructor()
     {
         return instructor;
