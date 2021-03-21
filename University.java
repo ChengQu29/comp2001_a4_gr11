@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 /**
-<<<<<<< HEAD
  * Write a description of class Admin here.
  *
  * @author (your name)
@@ -33,7 +32,7 @@ public class University
         // put your code here
         System.out.println("Courses offered by the university: ");
         for (Course course:courseList){
-            course.displayCourseInfo();
+            System.out.println(course.getCourseNumber()+" "+course.getCourseTitle()+" "+course.getInstructor());
             System.out.println();
         }
     }
@@ -75,7 +74,7 @@ public class University
         {
             ArrayList studentsInCourse = course.getStudent();
             if (studentsInCourse.contains(student)){
-                System.out.println(course.getCourseTitle() + " " + course.getGrade(student));
+                course.displayCourseInfo(student);
             }
         }
     }

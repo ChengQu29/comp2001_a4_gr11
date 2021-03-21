@@ -37,10 +37,7 @@ public class Course
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * method to add a student for the course
      */
     public void addStudent(Student student)
     {
@@ -48,6 +45,9 @@ public class Course
         students.add(student);
     }
     
+    /*
+     * assign grade for a student
+     */
     public void assignGrade(Student student, int grade)
     {
         grades.put(student, grade);
@@ -72,14 +72,23 @@ public class Course
         return courseTitle;
     }
     
-    public void displayCourseInfo()
+    public String getCourseNumber(){
+        return courseNumber;
+    }
+    
+    public String getInstructor(){
+        return instructor;
+    }
+    
+    /*
+     * Display course and registered students info 
+     */
+    public void displayCourseInfo(Student student)
     {
         System.out.println(courseNumber +" "+ courseTitle + " " + instructor);
         
-        for (Student student:students)
-        {
-            System.out.println(student.getStudentName()+ " " + grades.get(student));
-        }
+        System.out.println(student.getStudentName()+ " " + grades.get(student));
+        
         
     }
 }
