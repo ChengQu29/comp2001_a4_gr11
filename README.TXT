@@ -17,6 +17,7 @@ Luke Penney - 15
 - Wrote University class
 
 Chengwen Qu - 15
+- Brainstormed the ideas
 - Wrote University class
 - Wrote Student class
 
