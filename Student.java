@@ -1,8 +1,8 @@
 /**
  * Write a description of class Student here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Chengwen Qu)
+ * @version (22/03/2021)
  */
 public class Student
 {
@@ -32,7 +32,6 @@ public class Student
      */
     public String getStudentName()
     {
-        // put your code here
         return studentName;
     }
     

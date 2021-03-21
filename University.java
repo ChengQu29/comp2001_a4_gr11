@@ -2,8 +2,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class Admin here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Luke Penney, Chengwen QU)
+ * @version (22/03/2021)
  */
 public class University
 {
