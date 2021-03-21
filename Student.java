@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Student here.
  *
@@ -8,15 +7,21 @@
 public class Student
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private String studentName;
+    private int studentID;
+    private String department;
+    //private ArrayList<Course> courses;
 
     /**
      * Constructor for objects of class Student
      */
-    public Student()
+    public Student(String studentName, int studentID, String department)
     {
         // initialise instance variables
-        x = 0;
+        this.studentName = studentName;
+        this.studentID = studentID;
+        this.department = department;
+        //courses = new ArrayList<>();
     }
 
     /**
@@ -25,9 +30,20 @@ public class Student
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public String getStudentName()
     {
         // put your code here
-        return x + y;
+        return studentName;
     }
+    
+    public void setStudentName(String studentName)
+    {
+        this.studentName = studentName;
+    }
+    
+    public String getDepartment()
+    {
+        return department;
+    }
+     
 }

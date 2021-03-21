@@ -1,27 +1,29 @@
-import java.util.ArrayList;
-import java.util.HashMap;
+
 /**
  * Write a description of class Course here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class Course
 {
     // instance variables - replace the example below with your own
-    private int courseNumber;
+    private String courseID;
     private String courseTitle;
-    private ArrayList<Student> students;
     private String instructor;
-    private HashMap<Student,Integer> grades;
+    private ArrayList<Student> students;
+    private HashMap<Student, Integer> grades;
 
     /**
      * Constructor for objects of class Course
      */
-    public Course()
+    public Course(String courseID, String courseTitle, String instructor)
     {
         // initialise instance variables
-        this.courseNumber = courseNumber;
+        this.courseID = courseID;
         this.courseTitle = courseTitle;
         this.instructor = instructor;
         students = new ArrayList<>();
@@ -34,9 +36,44 @@ public class Course
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void addGrade(Student student, int grade)
+    public void addStudent(Student student)
     {
         // put your code here
-        grades.put(student,grade);
+        students.add(student);
+    }
+    
+    public void assignGrade(Student student, int grade)
+    {
+        grades.put(student, grade);
+    }
+    
+    public int getGrade(Student student)
+    {
+        return grades.get(student);
+    }
+    
+    public void dropStudent(Student student)
+    {
+        students.remove(student);
+    }
+    
+    public ArrayList getStudent()
+    {
+        return students;
+    }
+    
+    public String getCourseTitle(){
+        return courseTitle;
+    }
+    
+    public void displayCourseInfo()
+    {
+        System.out.println(courseID +" "+ courseTitle + " " + instructor);
+        
+        for (Student student:students)
+        {
+            System.out.println(student.getStudentName()+ " " + grades.get(student));
+        }
+        
     }
 }
