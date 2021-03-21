@@ -1,17 +1,17 @@
 
 /**
- * Write a description of class Course here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * The course class creates course objects that are added to the university.
+ * and can be enrolled in by students.
+ * @author (Luke Penney)
+ * @version (22/03/2021)
  */
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Course
 {
-    // instance variables - replace the example below with your own
-    private String courseID;
+
+    private String courseNumber;
     private String courseTitle;
     private String instructor;
     private ArrayList<Student> students;
@@ -19,11 +19,17 @@ public class Course
 
     /**
      * Constructor for objects of class Course
+     * 
+     * @param courseNumber is a string ex: "comp2001"
+     * @param courseTitle is the string title of the course ex: "into to oop"
+     * @param is the name of the instructor as a string ex: "Adrian Fiech"
      */
-    public Course(String courseID, String courseTitle, String instructor)
+
+    public Course(String courseNumber, String courseTitle, String instructor)
+
     {
         // initialise instance variables
-        this.courseID = courseID;
+        this.courseNumber = courseNumber;
         this.courseTitle = courseTitle;
         this.instructor = instructor;
         students = new ArrayList<>();
@@ -68,7 +74,7 @@ public class Course
     
     public void displayCourseInfo()
     {
-        System.out.println(courseID +" "+ courseTitle + " " + instructor);
+        System.out.println(courseNumber +" "+ courseTitle + " " + instructor);
         
         for (Student student:students)
         {

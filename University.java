@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 /**
+<<<<<<< HEAD
  * Write a description of class Admin here.
  *
  * @author (your name)
@@ -78,5 +79,4 @@ public class University
             }
         }
     }
-    
 }
