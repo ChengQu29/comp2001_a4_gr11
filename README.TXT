@@ -4,9 +4,19 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
+PROJECT TITLE: Course Registration System
 PURPOSE OF PROJECT:
 VERSION or DATE:
 HOW TO START THIS PROJECT:
-AUTHORS:
+AUTHORS: Luke Penney, Chengwen Qu
 USER INSTRUCTIONS:
+
+Luke Penney - 15
+- Brainstormed the ideas
+- Wrote Course class
+- Wrote University class
+
+Chengwen Qu - 15
+- Wrote University class
+- Wrote Student class
+
