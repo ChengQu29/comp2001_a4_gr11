@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @author (Chengwen Qu)
  * @version (22/03/2021)
  */
-public class University
+public class Admin
 {
     // instance variables - replace the example below with your own
     private ArrayList<Course> courseList;
@@ -17,7 +17,7 @@ public class University
     /**
      * Constructor for objects of class Admin
      */
-    public University()
+    public Admin()
     {
         // initialise instance variables
         courseList = new ArrayList<>();
