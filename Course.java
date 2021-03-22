@@ -103,8 +103,7 @@ public class Course
     public void displayCourseInfo(Student student)
     {
         System.out.println(courseNumber + " "+ courseTitle + " " + instructor);
-        
-        System.out.println(student.getStudentName()+ " " + grades.get(student));
+        System.out.println(student.getStudentName()+ " " + "grades: " + grades.get(student)+"\n");
         
         
     }

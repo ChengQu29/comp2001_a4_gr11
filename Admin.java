@@ -46,7 +46,8 @@ public class Admin
         for(Student student:studentList)
         {
             if(student.getDepartment().equals(departmentName)){
-                System.out.println(student.getStudentName()); //update this to get all info about a student
+                System.out.println(student.getStudentName() + " " + "registered: ");
+                printCourseInfoForStudent(student);
             }
         }
     }
