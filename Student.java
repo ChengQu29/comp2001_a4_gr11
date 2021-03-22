@@ -1,6 +1,5 @@
 /**
  * The student class creates student objects to be added to the university by Admin.
- *
  */
 public class Student
 {
@@ -18,7 +17,6 @@ public class Student
         this.studentName = studentName;
         this.studentID = studentID;
         this.department = department;
-        //courses = new ArrayList<>();
     }
 
     /**
@@ -26,7 +24,6 @@ public class Student
      */
     public String getStudentName()
     {
-        // put your code here
         return studentName;
     }
     
@@ -42,5 +39,4 @@ public class Student
     {
         return department;
     }
-     
 }

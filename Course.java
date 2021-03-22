@@ -79,12 +79,12 @@ public class Course
         return instructor;
     }
     
-    /*
+    /**
      * Display course info for the registered student
      */
     public void displayCourseInfo(Student student)
     {
-        System.out.println(courseNumber +" "+ courseTitle + " " + instructor);
+        System.out.println(courseNumber + " "+ courseTitle + " " + instructor);
         
         System.out.println(student.getStudentName()+ " " + grades.get(student));
         

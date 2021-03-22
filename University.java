@@ -5,8 +5,10 @@ import java.util.ArrayList;
  * provide a way for student to keep track of courses(printCourseInfoForStudent)
  * prints info about all offered courses
  * prints info for all students in a given department
+ * @author (Chengwen Qu)
+ * @version (22/03/2021)
  */
-public class Admin
+public class University
 {
     // instance variables - replace the example below with your own
     private ArrayList<Course> courseList;
@@ -15,7 +17,7 @@ public class Admin
     /**
      * Constructor for objects of class Admin
      */
-    public Admin()
+    public University()
     {
         // initialise instance variables
         courseList = new ArrayList<>();
