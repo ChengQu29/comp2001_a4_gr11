@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Admin here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Admin class to add new course and student to the university,
+ * enroll student in courses (enrollStudentInCourse) 
+ * provide a way for student to keep track of courses(printCourseInfoForStudent)
+ * prints info about all offered courses
+ * prints info for all students in a given department
  */
-public class University
+public class Admin
 {
     // instance variables - replace the example below with your own
     private ArrayList<Course> courseList;
@@ -14,7 +15,7 @@ public class University
     /**
      * Constructor for objects of class Admin
      */
-    public University()
+    public Admin()
     {
         // initialise instance variables
         courseList = new ArrayList<>();
@@ -22,10 +23,7 @@ public class University
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * prints info about all offered courses
      */
     public void printCourseOffered()
     {
@@ -37,6 +35,9 @@ public class University
         }
     }
     
+    /**
+     * prints info for all students in a given department
+     */
     public void printStudentInDepartment(String departmentName)
     {
         System.out.println("Students in " + departmentName +":");
@@ -48,26 +49,41 @@ public class University
         }
     }
     
+    /**
+     * add new course to university
+     */
     public void addCourse(Course course)
     {
         courseList.add(course);
     }
     
+    /**
+     * drop course for the university (not for the student)
+     */
     public void dropCourse(Course course)
     {
         courseList.remove(course);
     }
     
+    /**
+     * add student to the university 
+     */
     public void addStudent(Student student)
     {
         studentList.add(student);
     }
     
+    /**
+     * enroll student in courses
+     */
     public void enrollStudentInCourse(Student student, Course course)
     {
         course.addStudent(student);
     }
     
+    /**
+     * print info for student to keep track of courses and grades in which they are enrolled
+     */
     public void printCourseInfoForStudent(Student student)
     {
         for (Course course:courseList)

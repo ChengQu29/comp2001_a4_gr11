@@ -1,7 +1,6 @@
 
 /**
- * The course class creates course objects that are added to the university.
- * and can be enrolled in by students.
+ * The course class creates course objects to be added to the university by Admin.
  * @author (Luke Penney)
  * @version (22/03/2021)
  */
@@ -45,7 +44,7 @@ public class Course
         students.add(student);
     }
     
-    /*
+    /**
      * assign grade for a student
      */
     public void assignGrade(Student student, int grade)
@@ -81,7 +80,7 @@ public class Course
     }
     
     /*
-     * Display course and registered students info 
+     * Display course info for the registered student
      */
     public void displayCourseInfo(Student student)
     {

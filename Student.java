@@ -1,8 +1,6 @@
 /**
- * Write a description of class Student here.
+ * The student class creates student objects to be added to the university by Admin.
  *
- * @author (your name)
- * @version (a version number or a date)
  */
 public class Student
 {
@@ -10,7 +8,6 @@ public class Student
     private String studentName;
     private int studentID;
     private String department;
-    //private ArrayList<Course> courses;
 
     /**
      * Constructor for objects of class Student
@@ -25,10 +22,7 @@ public class Student
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * get student name
      */
     public String getStudentName()
     {
@@ -41,6 +35,9 @@ public class Student
         this.studentName = studentName;
     }
     
+    /**
+     * get student department
+     */
     public String getDepartment()
     {
         return department;
