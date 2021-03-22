@@ -52,29 +52,47 @@ public class Course
         grades.put(student, grade);
     }
     
+    /**
+     * getter method to get grade for a student
+     */
     public int getGrade(Student student)
     {
         return grades.get(student);
     }
     
+    /**
+     * drop a student from the course
+     */
     public void dropStudent(Student student)
     {
         students.remove(student);
     }
     
+    /**
+     * get the number of students registered for the course
+     */
     public ArrayList getStudent()
     {
         return students;
     }
     
+    /**
+     * get course title
+     */
     public String getCourseTitle(){
         return courseTitle;
     }
     
+    /**
+     * get course number
+     */
     public String getCourseNumber(){
         return courseNumber;
     }
     
+    /**
+     * get instructor name for the course
+     */
     public String getInstructor(){
         return instructor;
     }

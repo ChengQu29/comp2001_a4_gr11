@@ -27,6 +27,9 @@ public class Student
         return studentName;
     }
     
+    /**
+     * getter method to get student name
+     */
     public void setStudentName(String studentName)
     {
         this.studentName = studentName;
